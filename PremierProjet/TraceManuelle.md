@@ -9,3 +9,5 @@ fun main() {
     }
   }
  }
+
+## Sur la console, les valeurs  "1.033 + .3" et "1.066 + .6" seront affichées en séquence  
