@@ -1,5 +1,6 @@
-fun main(args: Array<String>) {
-    val rows = 5
+package premier.projet
+
+fun Triangle(height: Int) {
 
     for (i in 1..rows) {
         for (j in 1..i) {
@@ -8,3 +9,9 @@ fun main(args: Array<String>) {
         println()
     }
 }
+fun main(){
+    val height = 5
+    Triangle(height)
+
+}
+
