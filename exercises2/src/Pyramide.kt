@@ -1,9 +1,14 @@
-fun main(hauteur: Int, largeur: Int)  {
+package org.Hudiakov
+
+fun main()  {
+    val hauteur: Int = 4
+
+    for (i: Int in 1..hauteur){
+
+        println("*")
+
+    }
 
 
 }
 
-fun pyramide(){
-
-
-}
