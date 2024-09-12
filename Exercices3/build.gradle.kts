@@ -12,6 +12,7 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     implementation("org.jsoup:jsoup:1.18.1")
+    implementation ("com.sanctionco.jmail:jmail:1.6.2")
 }
 
 tasks.test {
