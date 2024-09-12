@@ -1,9 +1,9 @@
-import com.sanctionco.jmail.Email
+
 import com.sanctionco.jmail.JMail
 
 
 fun main(){
-    val email : String = "a.a@a.aa"
+    val email = "zor^r"
    if(JMail.isValid(email)){
        println("Ok : $email")
    }
