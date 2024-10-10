@@ -6,6 +6,7 @@ plugins {
 android {
     namespace = "org.Hudiakov"
     compileSdk = 34
+
     buildFeatures {
         viewBinding = true
     }
