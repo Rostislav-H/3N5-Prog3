@@ -1,11 +1,13 @@
 package org.Hudiakov.adapters
 
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import org.Hudiakov.SecondActivity
 import org.Hudiakov.databinding.MonItemBinding
 
 
@@ -13,6 +15,14 @@ class MonAdapter : ListAdapter<String, MonAdapter.MonItemViewHolder>(MonItemDiff
     inner class MonItemViewHolder(private val binding: MonItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: String) {
             binding.tvElement.text = item // On affiche l'élément dans le TextView
+
+            binding.btnActivity.setOnClickListener {
+                val intent: Intent = Intent(binding.root.context, SecondActivity::class.java)
+                // On ajoute le nom de l'élément à l'intent
+                intent.putExtra("monExtra", item)
+                // Démarrer l'activité SecondActivity
+                binding.root.context.startActivity(intent)
+            }
         }
     }
 
