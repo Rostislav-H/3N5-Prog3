@@ -45,10 +45,10 @@ class MainActivity : AppCompatActivity() {
             val name: String,
             val artistName: String,
         )
-        val album :Album = Album(0,"Antigéographiquement","Homme")
+
         val items: MutableList<String> = mutableListOf()
-        for (i in 1.. 100) {
-            items.add("Item #$i")
+        for (i in 1.. 10) {
+            items.add("#$i")
         }
 
         adapter.submitList(items) // Pour changer le contenu de la liste, utiliser submitList de l'adapteur
